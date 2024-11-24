@@ -19,7 +19,7 @@ public class App {
 
     public static int [] fillArray(int[]a, int size){
         for(int i = 0;i<size;i++){
-           a[i] = intInput("Type position "+ i+1 + " in the list.");
+           a[i] = intInput("Type position "+ (i+1)+ " in the list.");
         }
         return a;
     }
@@ -30,15 +30,18 @@ public class App {
             for(i = 0;i < size; i++){
                     if (a[i] == searchKey){
                         System.out.println("Found at position "+ i+ ".");
+                        return;
                     }
 
                     else{
                         if (i == size-1){
                             System.out.println("Not found.");
-                        } 
+                        }
                     }                   
                 }
             }
+        
+
     }
     
     public static void linearSearchAlgorithm(int size, int searchKey){
