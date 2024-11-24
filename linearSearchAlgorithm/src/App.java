@@ -39,8 +39,6 @@ public class App {
                     }                   
                 }
             }
-        
-
     }
     
     public static void linearSearchAlgorithm(int size, int searchKey){
